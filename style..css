@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fafafa;
+    
+}
+.navbar {
+    background: linear-gradient(90deg, #ffa726, #f57c00);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.navbar .nav-link {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+    position: relative;
+    transition: color 0.3 ease;
+}
+.navbar .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    left: 0;
+    bottom: -1px;
+    background-color: #fff;
+    transition: width 0.3s ease-in-out;
+}
+
+.navbar .nav-link:hover::after {
+    width: 100%;
+}
+.navbar .nav-link:hover {
+    color: #e3f2fd;
+}
+.navbar .nav-link.active {
+    font-weight: bold;
+    /* color: #fff !important; */
+    border-bottom: 2px solid #fff;
+  }
+
+/* ====== HOME SECTION ====== */
+.home-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 10%;
+  background: linear-gradient(to right, #fff3e0, #fffde7);
+  min-height: 90vh;
+}
+
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Teks utama */
+.home-text {
+  flex: 1 1 500px;
+  max-width: 600px;
+}
+
+.home-text h1 {
+      color: #f57c00;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #333;
+      border-right: 3px solid #333;
+      white-space: nowrap;
+      overflow: hidden;
+      display: inline-block;
+      animation: blinkCursor 0.8s steps(1) infinite;
+    }
+
+
+.home-text p {
+  color: #333;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+/* Tombol CTA */
+.btn-start {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #f57c00;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-start:hover {
+  background-color: #ef6c00;
+  transform: scale(1.05);
+}
+
+/* Gambar sisi kanan */
+.home-image {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.home-image img {
+  max-width: 400px;
+  width: 100%;
+
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Animasi gambar melayang */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes blinkCursor {
+      50% {
+        border-color: transparent;
+      }
+    }
+
+.tentang-kami {
+    padding: 30px;
+}
+.deteksi-jeruk {
+    padding: 20px;
+}
+
+.gallery-header {
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 30px;
+    }
+
+    .gallery-header h2 {
+      color: #ff8800;
+      font-weight: 700;
+    }
+
+    .gallery-img {
+      border-radius: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery-img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+    .contact-header {
+      text-align: center;
+      margin-top: 60px;
+      margin-bottom: 30px;
+    }
+
+    .contact-header h2 {
+      color: #ff8800;
+      font-weight: 700;
+    }
+
+    .contact-card {
+      border: none;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      background: #fff;
+    }
+
+    .btn-orange {
+      background-color: #ff8800;
+      color: white;
+      border: none;
+    }
+
+    .btn-orange:hover {
+      background-color: #e67600;
+    }
