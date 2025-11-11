@@ -16,6 +16,7 @@ body {
     top: 0;
     z-index: 1000;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    
 }
 
 .navbar ul {
@@ -66,7 +67,7 @@ body {
   align-items: center;
   padding: 80px 10%;
   background: linear-gradient(to right, #fff3e0, #fffde7);
-  min-height: 90vh;
+  min-height: 100vh;
 }
 
 .home-container {
